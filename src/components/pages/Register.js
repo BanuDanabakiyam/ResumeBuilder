@@ -80,7 +80,7 @@ export default function RegisterPage() {
                           </div>
                         </div>):null}
           
-                        <input type="submit" className="btn btn-login float-right"  value="Register"/>
+                        <input type="submit" className="btn btn-login float-right" disabled={Loading} value="Register"/>
                      </div>
                      <div className="clearfix"></div>
                      <div className="form-group">

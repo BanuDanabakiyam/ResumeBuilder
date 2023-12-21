@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './RegisterPage.css'
+import { Link } from 'react-router-dom';
 export default function RegisterPage() {
    const initialErrorState = {
       email:{required:false},
@@ -84,7 +85,7 @@ export default function RegisterPage() {
                      </div>
                      <div className="clearfix"></div>
                      <div className="form-group">
-                       Already have an account ? <a href="#">Login</a>
+                       Already have an account ?<Link to={'/login'}><a href="">Login</a></Link> 
                      </div>
           
           

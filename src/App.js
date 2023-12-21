@@ -1,11 +1,16 @@
 import React from "react";
+import { BrowserRouter,Route, Routes } from "react-router-dom";
 import RegisterPage from "./components/pages/Register";
 function App() {
   return (
     <div>
-      <RegisterPage/>
-         <h1>Test React,</h1>  
-    </div>
+      <BrowserRouter>
+      <Routes>
+        <Route path="register" element={<RegisterPage/>}></Route>
+        <Route path="/" element={<h1>Home</h1>}/>
+      </Routes>
+      </BrowserRouter>
+      </div>
     
   );
 }

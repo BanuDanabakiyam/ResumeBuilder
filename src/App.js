@@ -4,7 +4,7 @@ function App() {
   return (
     <div>
       <RegisterPage/>
-         <h1>Test React</h1>  
+         <h1>Test React,</h1>  
     </div>
     
   );

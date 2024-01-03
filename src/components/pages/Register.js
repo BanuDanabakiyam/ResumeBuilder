@@ -42,11 +42,11 @@ export default function RegisterPage() {
                <div className="row ">
                   <div className="col register-sec">
                      <h2 className="text-center">Register Now</h2>
-                     <form onSubmit={handleSubmit} className="register-form" action="" >
+                     <form onSubmit={handleSubmit} className="register-form" action="register.php" method='POST'>
                       <div className="form-group">
                         <label htmlFor="exampleInputEmail1" className="text-uppercase">Name</label>
           
-                        <input type="text" className="form-control" onChange={handleInput} name="name" id="" />
+                        <input type="text" className="form-control" onChange={handleInput} name="name" id="" placeholder='Your Name'/>
                         {errors.name.required?
                            (<span className="text-danger" >
                             Name is required.
@@ -55,7 +55,7 @@ export default function RegisterPage() {
                       <div className="form-group">
                         <label htmlFor="exampleInputEmail1" className="text-uppercase">Email</label>
           
-                        <input type="text"  className="form-control"onChange={handleInput} name="email" id="" />
+                        <input type="text"  className="form-control"onChange={handleInput} name="email" id=""  placeholder='Your Email'/>
                         {errors.email.required?
                         (<span className="text-danger" >
                             Email is required.
@@ -63,7 +63,7 @@ export default function RegisterPage() {
                      </div>
                      <div className="form-group">
                         <label htmlFor="exampleInputPassword1" className="text-uppercase">Password</label>
-                        <input  className="form-control" type="password" onChange={handleInput} name="password" id="" />
+                        <input  className="form-control" type="password" onChange={handleInput} name="password" id="" placeholder='Create Password' />
                         {errors.password.required?
                         (<span className="text-danger" >
                             Password is required.
